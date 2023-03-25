@@ -30,7 +30,6 @@ def extract_numbers(decrypted_data):
         for j, line in enumerate(page, start=1):
             # check if the line is not blank after trimming
             if line.strip():
-                line = b'FaabDAWsqqI12N~@D 5x3'
                 # search for the FIND token
                 find_regex = re.compile(b'F[A-Za-z]+I\d+N[A-Za-z]*I\d+[^\w]{0,5}D')
                 match = find_regex.search(line)
